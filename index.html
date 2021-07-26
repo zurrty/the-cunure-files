@@ -3,50 +3,62 @@
     <head>
         <style>
             @keyframes spinny {
-                from {transform: rotateY(0deg);}
-                to {transform: rotateY(360deg);}
+                0% {transform: translateY(0px);}
+                100% {transform: translateY(-40px);}
             }
             body
             {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                overflow-x: hidden;
+                color: white;
+                font-size: 50px;
+                text-align: center;
+                background-color: black;
                 height: 100vh;
                 width: 100vw;
-                margin: auto;
+                margin: 0px;
+                display: flex;
+                flex-direction: row;
             }
-            #wtfd9tiaywid {
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: 72pt;
-                text-align: center;
+            .wtf {
+                image-rendering:crisp-edges;
+                height: 50px;
+                width: min-content;
                 animation-name: spinny;
                 animation-duration: 1s;
                 animation-direction: alternate;
-                animation-timing-function: linear;
+                animation-timing-function: ease-out;
                 animation-iteration-count: infinite;
             }
+            .d9 
+            {
+                width: 20px;
+            }
+            .tiaywid
+            {
+                color: green;
+            }
         </style>
+        
     </head>
     <body>
-        <div id="wtfd9tiaywid">wtf d9 tiaywid</div>
-        <div id="wtfd9tiaywid">wtf d9 tiaywid</div>
-        <div id="wtfd9tiaywid">wtf d9 tiaywid</div>
-        <div id="wtfd9tiaywid">wtf d9 tiaywid</div>
-        <div id="wtfd9tiaywid">wtf d9 tiaywid</div>
-        <div id="wtfd9tiaywid">wtf d9 tiaywid</div>
-        <div id="wtfd9tiaywid">wtf d9 tiaywid</div>
-        <div id="wtfd9tiaywid">wtf d9 tiaywid</div>
-        <div id="wtfd9tiaywid">wtf d9 tiaywid</div>
-        <div id="wtfd9tiaywid">wtf d9 tiaywid</div>
-        <div id="wtfd9tiaywid">wtf d9 tiaywid</div>
-        <div id="wtfd9tiaywid">wtf d9 tiaywid</div>
-        <div id="wtfd9tiaywid">wtf d9 tiaywid</div>
-        <div id="wtfd9tiaywid">wtf d9 tiaywid</div>
-        <div id="wtfd9tiaywid">wtf d9 tiaywid</div>
-        <div id="wtfd9tiaywid">wtf d9 tiaywid</div>
-        <div id="wtfd9tiaywid">wtf d9 tiaywid</div>
-        <div id="wtfd9tiaywid">wtf d9 tiaywid</div>
-        <div id="wtfd9tiaywid">wtf d9 tiaywid</div>
-        <div id="wtfd9tiaywid">wtf d9 tiaywid</div>
-        <div id="wtfd9tiaywid">wtf d9 tiaywid</div>
-        <div id="wtfd9tiaywid">wtf d9 tiaywid</div>
-        </span>
+        <script>
+            const wtfd9tiaywid ="cunure: wtf d9 tiaywid"
+            for (let d9 = 0; d9 < wtfd9tiaywid.length; d9++) {
+                let tiaywid = wtfd9tiaywid[d9];
+                let delay = d9*0.1;
+                if (tiaywid == " ") {
+                    document.body.innerHTML += `<div class="wtf d9"></div>`
+                } else {
+                    if (d9 < 7) {
+                        document.body.innerHTML += `<h1 class="wtf tiaywid" style="animation-delay:${delay}s;">${tiaywid}</h1>`
+                    }
+                    else
+                    {
+                        document.body.innerHTML += `<h1 class="wtf" style="animation-delay:${delay}s;">${tiaywid}</h1>`
+                    }
+                }
+            }
+        </script>
     </body>
 </html>
