@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            @keyframes wtfd9tiaywid {
+                from {transform: rotateY(0);}
+                to {transform: rotateY(360);}
+            }
+            #wtfd9tiaywid {
+                animation: wtfd9tiaywid 3s linear 0s, infinite;
+            }
+        </style>
     </head>
     <body>
-        <script type="module">
-            import * as THREE from './three.js'
-            import { OBJLoader } from "./objloader.js"
-            var loader = new OBJLoader();
-            var scn = THREE.Scene()
-            loader.load("wtfd9tiaywid.obj", (obj)=> {scn.add(obj)})
-            const renderer = new THREE.WebGLRenderer();
-            renderer.setSize( window.innerWidth, window.innerHeight );
-            document.body.appendChild( renderer.domElement );
-        </script>
+        <div id="wtfd9tiaywid">
+            wtf d9 tiaywid
+        </div>
     </body>
 </html>
