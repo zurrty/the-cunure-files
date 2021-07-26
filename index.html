@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="taccgl.js"></script>
     </head>
     <body>
-        <script>
-            var model = taccgl.objFile().read("/wtfd9tiaywid.obj",false)
-            taccgl.actor("ass", model.scene()).modFit().rotateMiddle(0.0,1.0,0.0).start()
+        <script type="module">
+            import * as THREE from './three.js'
+            import { OBJLoader } from "./objloader.js"
+            var loader = new OBJLoader();
+            var scn = THREE.Scene()
+            loader.load("wtfd9tiaywid.obj", (obj)=> {scn.add(obj)})
+            const renderer = new THREE.WebGLRenderer();
+            renderer.setSize( window.innerWidth, window.innerHeight );
+            document.body.appendChild( renderer.domElement );
         </script>
-        <div id="ass">
-        </div>
     </body>
 </html>
